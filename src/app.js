@@ -6,7 +6,10 @@ let currentTeam = "Manchester FC";
 let trophiesWon = 27;
 
 //Write your function here
-
+function createManager(managerName,managerAge,currentTeam,trophiesWon)
+{
+  return manager=[managerName,managerAge,currentTeam,trophiesWon];
+}
 
 // Don't edit the following code
 try {
@@ -24,7 +27,25 @@ try {
 var formation = [4, 4, 3];
 
 //write your function here
-
+function createFormation(formation){
+  // if(formation!=null){
+  //  const form={};
+  //  form[forwards]=formation[0];
+  //  form[midfielders]=formation[1];
+  //  form[defenders]=formation[2];
+  //  return form;}
+  // else
+  // {
+  //   return null;
+  // }
+  if(formation== null){
+    return null;
+  }
+  else
+  {
+    return{defender:formation[0],midfield:formation[1],forward:formation[2]};
+  }
+}
 
 // Dont edit the following code
 
