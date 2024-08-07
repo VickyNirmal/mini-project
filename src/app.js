@@ -56,8 +56,8 @@ try {
 }
 
 //Progression 3 - Filter players that debuted in ___ year
-function{
-  
+function(){
+
 }
 
 //Progression 4 - Filter players that play at the position _______
