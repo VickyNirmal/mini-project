@@ -38,7 +38,7 @@ function createFormation(formation){
   // {
   //   return null;
   // }
-  if(formation== null){
+  if(formation.length == 0){
     return null;
   }
   else
@@ -56,18 +56,59 @@ try {
 }
 
 //Progression 3 - Filter players that debuted in ___ year
-function(){
-
+const filterByDebut= (year) => {
+  const deb_players = players.filter((player) => {
+    if(player.debut == year)
+    {
+      return player;
+    }
+  })
+  return deb_players;
 }
 
 //Progression 4 - Filter players that play at the position _______
-
+const filterByPosition = (position) => {
+  return players.filter((player) => {
+    if(player.position == position)
+      return player;
+  })
+}
 
 // //Progression 5 - Filter players that have won ______ award
-
+const filterByAward = (awardname) => {
+  const award_player=[];
+    players.forEach((player) => {
+      let awardlist = player.awards;
+      awardlist.forEach((award) => {
+        if(award.name == awardname)
+          award_player.push(player);
+      })
+    })
+    return award_player;
+}
 
 
 //Progression 6 - Filter players that won ______ award ____ times
+const filterByAwardxTimes = (awardname,count) => {
+  const playerslist = filterByAward(awardname);
+  const awardx_player = [];
+  players.forEach((player) => {
+    let awardlist = player.awards;
+    awardlist.forEach((award) => {
+      var times = 0;
+      if(award.name == awardname)
+      {
+        times++;
+      }
+    }
+  )
+  if(count == times)
+    {
+      awardx_player.push(player);
+    }
+  })
+  return awardx_player;
+}
 
 
 
