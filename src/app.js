@@ -27,16 +27,6 @@ var formation = [4, 4, 3];
 
 //write your function here
 function createFormation(formation) {
-  // if(formation!=null){
-  //  const form={};
-  //  form[forwards]=formation[0];
-  //  form[midfielders]=formation[1];
-  //  form[defenders]=formation[2];
-  //  return form;}
-  // else
-  // {
-  //   return null;
-  // }
   if (formation.length == 0) {
     return null;
   } else {
@@ -129,12 +119,22 @@ const filterByNoOfAwardsxTeamxAge = (noOfAwards, team, Age) => {
 
 //Challenge 2 - Sort players beloging to _____ team in descending order of awards won
 const FilterByTeamxSortByNoOfAwards = (team) => {
+  let temp;
   let team_players = players.filter((player) => {
     if (player.team == team) return player;
   });
-  team_players.sort((a, b) => {
-    return b.awards.length - a.awards.length;
-  });
+  for(let i=0;i<team_players.length;i++)
+  {
+    for(let j=i+1;j<team_players.length;j++)
+    {
+           if(team_players[i].awards.length < team_players[j].awards.length)
+            {
+              temp=team_players[i];
+              team_players[i]=team_players[j];
+              team_players[j]=temp;
+            }                      
+    }
+  }
   return team_players;
 };
 
