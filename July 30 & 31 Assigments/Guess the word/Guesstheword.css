@@ -1,0 +1,102 @@
+.Outline-Container {
+  height: 800px;
+  width: 65%;
+  background-color: rgb(126, 255, 210);
+  align-content: center;
+}
+
+.Main-Container {
+  height: 725px;
+  width: 93%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Head {
+  font-family: "Lora", serif;
+  display: inline;
+  font-size: 85px;
+  color: rgb(0, 136, 255);
+  word-spacing: 8px;
+  margin: 0px;
+  margin-top: 30px;
+}
+
+.Question {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  margin-top: 20px;
+  margin: 0px;
+}
+
+.Grid-Container {
+  height: 80px;
+  width: 93%;
+  background-color: rgb(244, 244, 244);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 48px);
+  justify-content: center;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.Grid-item {
+  height: 48px;
+  width: 48px;
+  background-color: inherit;
+  border: 2px solid rgb(81, 81, 81);
+  border-radius: 8px;
+  align-content: center;
+  font-size: 30px;
+}
+
+.Condition {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.Textbox {
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  width: 160px;
+}
+
+.Guess-btn {
+  width: 110px;
+  font-size: 20px;
+  height: 49px;
+  background-color: rgb(25, 130, 243);
+  color: white;
+  border-radius: 7px;
+  border: 0px;
+}
+
+.Exit-btn {
+  width: 163px;
+  font-size: 22px;
+  height: 60px;
+  background-color: rgb(25, 130, 243);
+  color: white;
+  border-radius: 7px;
+  border: 0px;
+  font-weight: 700;
+}
+
+.Reset-btn {
+  width: 180px;
+  font-size: 22px;
+  font-weight: 700;
+  height: 60px;
+  background-color: rgb(25, 130, 243);
+  color: white;
+  border-radius: 7px;
+  border: 0px;
+}
