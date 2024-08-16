@@ -1,0 +1,121 @@
+.Body{
+    background-image: url(Assets/Ben10.jpg);
+    background-size: cover;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Head{
+    font-family: "Cardo", serif;
+    font-size: 40px;
+    align-content: center;
+    font-style: italic;
+    background-color: orange;
+    color: azure;
+    height: 70px;
+    width:100%;
+}
+
+.Topic-1{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.Topic-2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.Heros{
+    display: grid;
+    grid-template-columns: repeat(5,120px);
+    column-gap: 25px;
+    margin-top: 20px;;
+}
+
+.Hero1{
+    background-image: url(Assets/Kevin-ben-10-alien-force.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Hero2{
+    background-image: url(Assets/Jonah_Melville.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Hero3{
+    background-image: url(Assets/Carl_alter.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Hero4{
+    background-image: url(Assets/Tim_Dean_new.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Hero5{
+    background-image: url(Assets/Kenko.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Villains{
+    display: grid;
+    grid-template-columns: repeat(6,120px);
+    column-gap: 25px;
+    margin-top: 20px;
+}
+
+.Villain1{
+    background-image: url(Assets/Dr_Animo.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Villain2{
+    background-image: url(Assets/charmcaster.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Villain3{
+    background-image: url(Assets/Exo-skull.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Villain4{
+    background-image: url(Assets/Kraab.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Villain5{
+    background-image: url(Assets/SlixVigma.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+.Villain6{
+    background-image: url(Assets/Vilgax.jpg);
+    background-size: cover;
+    height: 120px;
+}
+
+
+
+
