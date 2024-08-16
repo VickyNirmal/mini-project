@@ -1,0 +1,88 @@
+.Container {
+  height: 800px;
+  width: 62%;
+  background-color: rgb(215, 215, 0);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Sub-Container {
+  height: 540px;
+  width: 75%;
+  display: flex;
+}
+
+.Grid {
+  display: inline-grid;
+  grid-template-columns: repeat(4, 130px);
+  gap: 5px;
+}
+
+.Grid-item {
+  width: 130px;
+  height: 130px;
+  background-color: rgb(154, 154, 154);
+  border-radius: 25px;
+  font-size: 50px;
+  align-content: center;
+}
+
+.Panel {
+  height: 100%;
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.Sub-Panel {
+  display: flex;
+  flex-direction: column;
+  height: 48%;
+  justify-content: space-around;
+  padding-left: 12px;
+}
+
+.Points-table {
+  width: 45%;
+  height: 70px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.Move-row {
+  height: 50%;
+  vertical-align: top;
+}
+
+.Point-row {
+  height: 50%;
+  vertical-align: bottom;
+}
+
+.Exit-btn {
+  border-radius: 7px;
+  border-style: none;
+  height: 50px;
+  width: 60%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  background-color: rgb(63, 111, 255);
+  color: white;
+}
+
+.Reset-btn {
+  border-radius: 7px;
+  border-style: none;
+  height: 50px;
+  width: 68%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  background-color: rgb(63, 111, 255);
+  color: white;
+  margin-bottom: 20px;
+}
